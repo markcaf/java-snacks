@@ -14,7 +14,7 @@ public class Snack2 {
         
         Random rnd = new Random();
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < names.length; i++) {
         	int rndNameIndex = rnd.nextInt(names.length);
         	int rndSurnameIndex = rnd.nextInt(surnames.length);
             System.out.println(names[rndNameIndex] + " " + surnames[rndSurnameIndex]);
