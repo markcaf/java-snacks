@@ -22,8 +22,8 @@ public class Snack5 {
 		int max = arr[0];
 		int maxPosition = 0;
 		
-		int sum = 0;
-		float avg = 0f;
+		float sum = 0;
+		float avg = 0;
 		
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] < min) {
@@ -35,10 +35,16 @@ public class Snack5 {
 				max = arr[i];
 				maxPosition = i;
 			}
+			
+			sum += arr[i];
 		}
+		
+		avg = sum / arr.length;
+		
 		System.out.println("Il valore minimo nell'array è " + min + ", la sua posizione è " + minPosition);
 		System.out.println("Il valore massimo nell'array è " + max + ", la sua posizione è " + maxPosition);
-		
+		System.out.println("La somma dei valori è: " + sum);
+		System.out.println("La media dei valori è: " + avg);
 	}
 
 }
