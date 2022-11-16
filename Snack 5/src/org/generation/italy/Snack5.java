@@ -26,6 +26,17 @@ public class Snack5 {
 			}
 		}
 		System.out.println("Il valore minimo nell'array è " + min + ", la sua posizione è " + minPosition);
+		
+		//Trovare il valore massimo
+		int max = arr[0];
+		int maxPosition = 0;
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] > max) {
+				max = arr[i];
+				maxPosition = i;
+			}
+		}
+		System.out.println("Il valore massimo nell'array è " + max + ", la sua posizione è " + maxPosition);
 	}
 
 }
