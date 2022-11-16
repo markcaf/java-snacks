@@ -16,27 +16,29 @@ public class Snack5 {
 		
 		int[] arr = { 70, 39, 18, 30, 51, 59, 1, 47, 67, 87 };
 		
-		//Trovare il valore minimo
 		int min = arr[0];
 		int minPosition = 0;
+		
+		int max = arr[0];
+		int maxPosition = 0;
+		
+		int sum = 0;
+		float avg = 0f;
+		
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] < min) {
 				min = arr[i];
 				minPosition = i;
 			}
-		}
-		System.out.println("Il valore minimo nell'array è " + min + ", la sua posizione è " + minPosition);
-		
-		//Trovare il valore massimo
-		int max = arr[0];
-		int maxPosition = 0;
-		for (int i = 0; i < arr.length; i++) {
+			
 			if (arr[i] > max) {
 				max = arr[i];
 				maxPosition = i;
 			}
 		}
+		System.out.println("Il valore minimo nell'array è " + min + ", la sua posizione è " + minPosition);
 		System.out.println("Il valore massimo nell'array è " + max + ", la sua posizione è " + maxPosition);
+		
 	}
 
 }
