@@ -17,6 +17,7 @@ public class Snack6 {
 		int[] arr1 = { 70, 39, 18, 30, 51, 59, 1, 47, 67, 87 };
 		int[] arr2 = { 42, 56, 7, 42, 62, 90, 86, 54, 45, 32 };
 		
+		//Array sommatoria
 		int[] arrSum = new int[10];
 		
 		System.out.print("Array sommatoria: ");
@@ -24,6 +25,30 @@ public class Snack6 {
 			arrSum[i] = arr1[i] + arr2[i];
 			System.out.print(arrSum[i] + " ");
 		}
+		System.out.println("");
+		
+		//Valori minimo e massimo di entrambi gli array assieme
+		int min = arr1[0];
+		int max = arr1[0];
+		
+		for (int i = 0; i < arr1.length; i++) {
+			//Condizione per il minimo
+			if (arr1[i] < min)
+				min = arr1[i];
+			
+			if (arr2[i] < min)
+				min = arr2[i];
+			
+			//Condizione per il massimo
+			if (arr1[i] > max)
+				max = arr1[i];
+			
+			if (arr2[i] > max)
+				max = arr2[i];
+		}
+		System.out.println("Valore minimo: " + min);
+		System.out.println("Valore massimo: " + max);
+		
 	}
 
 }
