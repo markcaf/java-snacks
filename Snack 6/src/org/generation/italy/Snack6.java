@@ -30,6 +30,7 @@ public class Snack6 {
 		//Valori minimo e massimo di entrambi gli array assieme
 		int min = arr1[0];
 		int max = arr1[0];
+		float sum = 0;
 		
 		for (int i = 0; i < arr1.length; i++) {
 			//Condizione per il minimo
@@ -45,9 +46,17 @@ public class Snack6 {
 			
 			if (arr2[i] > max)
 				max = arr2[i];
+			
+			//Somma
+			sum += arr1[i] + arr2[i];
 		}
+		
+		float avg = sum / (arr1.length + arr2.length);
+		
 		System.out.println("Valore minimo: " + min);
 		System.out.println("Valore massimo: " + max);
+		System.out.println("La somma dei valori è: " + sum);
+		System.out.println("La media dei valori è: " + avg);
 		
 	}
 
